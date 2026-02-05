@@ -45,8 +45,8 @@ function App() {
       <Route path="/communities" element={<PrivateRoute><Communities /></PrivateRoute>} />
       <Route path="/communities/:id" element={<PrivateRoute><CommunityDetail /></PrivateRoute>} />
       <Route path="/communities/create" element={<PrivateRoute><CreateCommunity /></PrivateRoute>} />
-      
-      
+  
+
       <Route path="/map" element={<Map />} />
       <Route path="/posts/:postId" element={<PrivateRoute><PostDetail /></PrivateRoute>}/>
       <Route path="/communities/:communityId/posts/:postId" element={<PostDetail />}/>
