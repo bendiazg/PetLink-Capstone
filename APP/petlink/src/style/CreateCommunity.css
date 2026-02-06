@@ -1,0 +1,141 @@
+.createCommunity {
+padding: 1rem;
+max-width: 420px;
+margin: auto;
+}
+
+.createCommunity h2 {
+text-align: center;
+margin-bottom: 1rem;
+}
+
+.createCommunity form {
+background: white;
+border-radius: 20px;
+padding: 1.2rem;
+box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+display: flex;
+flex-direction: column;
+gap: 0.9rem;
+}
+
+.createCommunity input,
+.createCommunity textarea {
+width: 100%;
+padding: 0.7rem 0.8rem;
+border-radius: 14px;
+border: 1px solid #d1d5db;
+font-size: 0.9rem;
+}
+
+.createCommunity textarea {
+min-height: 90px;
+resize: vertical;
+}
+
+.switchRow {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 0.9rem;
+}
+
+/* Switch */
+.switch {
+position: relative;
+width: 44px;
+height: 24px;
+}
+
+.switch input {
+display: none;
+}
+
+.switch span {
+position: absolute;
+inset: 0;
+background: #d1d5db;
+border-radius: 999px;
+cursor: pointer;
+}
+
+.switch span::before {
+content: "";
+position: absolute;
+width: 18px;
+height: 18px;
+background: white;
+border-radius: 50%;
+top: 3px;
+left: 3px;
+transition: transform 0.2s;
+}
+
+.switch input:checked + span {
+background: var(--green-main);
+}
+
+.switch input:checked + span::before {
+transform: translateX(20px);
+}
+
+/* Uploads */
+.uploadSection {
+display: flex;
+align-items: center;
+gap: 0.8rem;
+}
+
+.uploadPreview {
+background: #e5e7eb;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #6b7280;
+overflow: hidden;
+}
+
+.uploadPreview img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.uploadPreview.icon {
+width: 56px;
+height: 56px;
+border-radius: 50%;
+font-size: 1.6rem;
+}
+
+.uploadPreview.banner {
+width: 100%;
+height: 80px;
+border-radius: 12px;
+font-size: 1.2rem;
+}
+
+.uploadBox {
+flex: 1;
+padding: 0.7rem;
+border: 2px dashed var(--green-main);
+border-radius: 14px;
+text-align: center;
+font-size: 0.85rem;
+cursor: pointer;
+}
+
+.uploadBox input {
+display: none;
+}
+
+.submitBtn {
+margin-top: 0.6rem;
+padding: 0.8rem;
+border-radius: 16px;
+border: none;
+background: var(--green-dark);
+color: white;
+font-size: 1rem;
+font-weight: 600;
+}

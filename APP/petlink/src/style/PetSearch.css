@@ -1,0 +1,103 @@
+.search {
+min-height: 100vh;
+background: var(--green-soft);
+padding: 1rem;
+}
+
+.search__header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.search__header h1 {
+font-size: 1.4rem;
+}
+
+.search__header button {
+background: var(--green-main);
+border: none;
+border-radius: 12px;
+padding: 0.4rem 0.8rem;
+}
+
+.search__input {
+width: 100%;
+margin: 0.6rem 0;
+padding: 0.7rem;
+border-radius: 12px;
+border: 1px solid #d1d5db;
+}
+
+.filters {
+background: white;
+border-radius: 18px;
+padding: 1rem;
+margin-bottom: 1rem;
+display: flex;
+flex-direction: column;
+gap: 0.6rem;
+}
+
+.filters select,
+.filters input {
+padding: 0.6rem;
+border-radius: 10px;
+border: 1px solid #d1d5db;
+}
+
+.ageRow {
+display: flex;
+gap: 0.4rem;
+}
+
+.filters label {
+display: flex;
+justify-content: space-between;
+background: #f9fdfb;
+padding: 0.6rem 0.8rem;
+border-radius: 12px;
+}
+
+.clear {
+background: #e5e7eb;
+border: none;
+border-radius: 12px;
+padding: 0.6rem;
+}
+
+.search__grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 0.8rem;
+}
+
+.petCard {
+background: white;
+border-radius: 16px;
+overflow: hidden;
+box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.petCard img {
+width: 100%;
+height: 140px;
+object-fit: cover;
+}
+
+.petCard__info {
+padding: 0.6rem;
+}
+
+.petCard__info h3 {
+font-size: 1rem;
+}
+
+.petCard__info span {
+font-size: 0.8rem;
+}
+
+.search__empty {
+text-align: center;
+margin-top: 2rem;
+}

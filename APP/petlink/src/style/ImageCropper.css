@@ -1,0 +1,68 @@
+.cropperOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.cropperContainer {
+  flex: 1;
+  position: relative;
+}
+
+.cropperControls {
+  background: #111;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cropperControls input[type="range"] {
+  width: 100%;
+}
+
+.cropperActions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.cropperActions button {
+  flex: 1;
+  padding: 0.7rem;
+  border-radius: 14px;
+  border: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.cancelBtn {
+  background: #e5e7eb;
+  color: #1f2937;
+}
+
+.confirmBtn {
+  background: var(--green-dark);
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .cropperOverlay {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cropperContainer {
+    width: 420px;
+    height: 420px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .cropperControls {
+    width: 420px;
+    border-radius: 0 0 20px 20px;
+  }
+}
